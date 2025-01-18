@@ -1,4 +1,5 @@
 import 'package:blinkit_clone_flutter/Widgets/UiHelper.dart';
+import 'package:blinkit_clone_flutter/pages/bottomNavagation/BottomNavagationPage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -13,13 +14,9 @@ class LoginPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-           
               child: Uihelper.CustomImage(
                 img: "loginScreenImg.png",
               ),
-            ),
-            SizedBox(
-              height: 10,
             ),
             Uihelper.CustomImage(
               img: "miniLogo.png",
@@ -30,9 +27,6 @@ class LoginPage extends StatelessWidget {
               fontWeight: FontWeight.bold,
               size: 20,
             ),
-            SizedBox(
-              height: 10,
-            ),
             Card(
               elevation: 4,
               child: Container(
@@ -42,7 +36,7 @@ class LoginPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Uihelper.CustomText(
                       text: "faisal",
@@ -68,7 +62,14 @@ class LoginPage extends StatelessWidget {
                         ),
                         hoverElevation: 40,
                         color: Color(0XFFE23744),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => BottomNavagationPage(),
+                            ),
+                          );
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -90,6 +91,9 @@ class LoginPage extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       size: 10,
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Uihelper.CustomText(
                       text: "or login with phone number",
                       color: Color(0XFF269237),
@@ -106,9 +110,3 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-

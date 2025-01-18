@@ -1,3 +1,5 @@
+import 'package:blinkit_clone_flutter/pages/bottomNavagation/BottomNavagationPage.dart';
+import 'package:blinkit_clone_flutter/pages/home/HomePage.dart';
 import 'package:blinkit_clone_flutter/pages/splash/splash.dart';
 import 'package:flutter/material.dart';
 

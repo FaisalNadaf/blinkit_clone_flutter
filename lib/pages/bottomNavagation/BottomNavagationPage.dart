@@ -20,11 +20,11 @@ class _BottomNavagationPageState extends State<BottomNavagationPage> {
 
   @override
   Widget build(BuildContext context) {
-    const List<Widget> pages = [
-      HomePage(),
+    List<Widget> pages = [
+      const HomePage(),
       CartPage(),
-      CategoryPage(),
-      PrintPage(),
+      const CategoryPage(),
+      const PrintPage(),
     ];
     return Scaffold(
 
